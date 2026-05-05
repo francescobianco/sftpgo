@@ -7,15 +7,8 @@ cd /opt/sftpgo
 
 git pull --no-rebase
 
-chmod 777 -R data/
+chmod 777 data/
 
 cp -f docker-compose.override.yml.example docker-compose.override.yml
 
-cat docker-compose.override.yml
-
 docker compose up -d --force-recreate
-sleep 5
-docker compose logs
-docker compose ps
-
-curl http://localhost:18080
