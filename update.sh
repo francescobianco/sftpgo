@@ -13,7 +13,7 @@ cat docker-compose.override.yml
 
 docker compose up -d --force-recreate
 sleep 5
-
+docker compose logs
 docker compose ps
 
 curl http://localhost:18080
