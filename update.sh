@@ -12,3 +12,5 @@ cp -f docker-compose.override.yml.example docker-compose.override.yml
 cat docker-compose.override.yml
 
 docker compose up -d --force-recreate
+
+curl http://localhost:18080
