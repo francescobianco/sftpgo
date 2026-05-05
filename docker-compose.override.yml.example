@@ -8,7 +8,7 @@ services:
       - proxy
     labels:
       traefik.enable: "true"
-      traefik.http.routers.tigermate.rule: "Host(`drive.alterloop.dev`)"
-      traefik.http.routers.tigermate.entrypoints: "websecure"
-      traefik.http.routers.tigermate.tls.certresolver: "le"
-      traefik.http.services.tigermate.loadbalancer.server.port: "8080"
+      traefik.http.routers.sftpgo.rule: "Host(`drive.alterloop.dev`)"
+      traefik.http.routers.sftpgo.entrypoints: "websecure"
+      traefik.http.routers.sftpgo.tls.certresolver: "le"
+      traefik.http.services.sftpgo.loadbalancer.server.port: "8080"
