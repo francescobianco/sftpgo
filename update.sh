@@ -9,6 +9,7 @@ git pull --no-rebase
 
 mkdir -p data || true
 rm -f data/.gitkeep || true
+touch data/sftpgo.db
 
 cp -f docker-compose.override.yml.example docker-compose.override.yml
 
