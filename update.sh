@@ -15,4 +15,6 @@ docker compose stop
 rm -fr tunnel.pub
 touch tunnel.pub
 
+ls -la
+
 docker compose up -d --force-recreate
