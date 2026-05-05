@@ -20,6 +20,8 @@ autossh -f -M 0 -N \
   -o ServerAliveInterval=10 \
   -o ServerAliveCountMax=3 \
   -o ExitOnForwardFailure=yes \
+  -o ConnectTimeout=10 \
+  -o TCPKeepAlive=yes \
   -i ~/.ssh/id_rsa \
   -R 0.0.0.0:2224:192.168.144.33:22 \
   -p 2222 \
