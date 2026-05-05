@@ -18,6 +18,7 @@ services:
       - USER_NAME=tunnel
       - PASSWORD_ACCESS=false
       - PUBLIC_KEY_FILE=/config/tunnel.pub
+      - GATEWAY_PORTS=yes
     volumes:
       - ./config:/config
       - ./tunnel.pub:/config/tunnel.pub:ro
