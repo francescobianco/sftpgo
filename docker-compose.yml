@@ -6,3 +6,4 @@ services:
       - 18080:8080
     volumes:
       - ./data:/var/lib/sftpgo
+    restart: "always"

@@ -1,6 +1,5 @@
 .idea/
 .vscode/
 data/
-!data/.gitkeep
 .convcommit
 docker-compose.override.yml
