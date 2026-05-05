@@ -3,6 +3,6 @@ services:
   sftpgo:
     image: drakkan/sftpgo:v2.7.0
     ports:
-      - 8080:8080
+      - 18080:8080
     volumes:
       - ./data:/var/lib/sftpgo
