@@ -7,9 +7,6 @@ cd /opt/sftpgo
 
 git pull --no-rebase
 
-mkdir -p data || true
-rm -f data/.gitkeep || true
-touch data/sftpgo.db
 chmod 777 -R data/
 
 cp -f docker-compose.override.yml.example docker-compose.override.yml
