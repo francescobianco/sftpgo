@@ -4,6 +4,7 @@ services:
     image: drakkan/sftpgo:v2.7.0
     ports:
       - 18080:8080
+      - 2022:2022
     volumes:
       - ./data:/var/lib/sftpgo
     restart: "always"
