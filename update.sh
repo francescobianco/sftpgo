@@ -10,12 +10,6 @@ git pull --no-rebase
 chmod 777 data/
 
 cp -f docker-compose.override.yml.example docker-compose.override.yml
-
-docker compose stop
-rm -fr tunnel.pub || true
-rm -fr tunnel/tunnel.pub || true
 touch tunnel.pub
-
-ls -la
 
 docker compose up -d --force-recreate

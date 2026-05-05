@@ -6,6 +6,7 @@ services:
   sftpgo:
     networks:
       - proxy
+      - default
     labels:
       traefik.enable: "true"
       traefik.http.routers.sftpgo.rule: "Host(`drive.alterloop.dev`)"
