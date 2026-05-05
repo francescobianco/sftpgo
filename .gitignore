@@ -2,5 +2,8 @@
 .vscode/
 data/
 !data/.gitkeep
+tunnel/
+!tunnel/.gitkeep
 .convcommit
 docker-compose.override.yml
+tunnel.pub

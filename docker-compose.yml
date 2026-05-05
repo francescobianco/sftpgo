@@ -7,3 +7,17 @@ services:
     volumes:
       - ./data:/var/lib/sftpgo
     restart: "always"
+
+  tunnel:
+    image: linuxserver/openssh-server
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - USER_NAME=tunnel
+      - PASSWORD_ACCESS=false
+      - PUBLIC_KEY_FILE=/config/tunnel.pub
+    volumes:
+      - ./tunnel:/config
+      - ./tunnel.pub:/config/tunnel.pub:ro
+    restart: always
