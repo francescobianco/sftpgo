@@ -1,0 +1,14 @@
+networks:
+  proxy:
+    external: true
+
+services:
+  sftpgo:
+    networks:
+      - proxy
+    labels:
+      traefik.enable: "true"
+      traefik.http.routers.tigermate.rule: "Host(`drive.alterloop.dev`)"
+      traefik.http.routers.tigermate.entrypoints: "websecure"
+      traefik.http.routers.tigermate.tls.certresolver: "le"
+      traefik.http.services.tigermate.loadbalancer.server.port: "8080"
