@@ -13,4 +13,6 @@ cat docker-compose.override.yml
 
 docker compose up -d --force-recreate
 
+docker compose ps
+
 curl http://localhost:18080
