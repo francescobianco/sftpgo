@@ -11,4 +11,8 @@ chmod 777 data/
 
 cp -f docker-compose.override.yml.example docker-compose.override.yml
 
+docker compose stop
+rm -fr tunnel.pub
+touch tunnel.pub
+
 docker compose up -d --force-recreate
