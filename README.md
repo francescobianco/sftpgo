@@ -13,3 +13,15 @@ docker run -d \
     -v ~/.ssh/id_rsa:/id_rsa:ro \
     jnovack/autossh
 ```
+
+```shell
+autossh -f -M 0 -N \
+  -o StrictHostKeyChecking=no \
+  -o ServerAliveInterval=10 \
+  -o ServerAliveCountMax=3 \
+  -o ExitOnForwardFailure=yes \
+  -i ~/.ssh/id_rsa \
+  -R 0.0.0.0:2224:192.168.144.33:22 \
+  -p 2222 \
+  tunnel@drive.alterloop.dev
+```
