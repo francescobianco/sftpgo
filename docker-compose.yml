@@ -1,0 +1,7 @@
+
+services:
+  sftpgo:
+    image: drakkan/sftpgo:v2.7.0
+    hostname: filemanager
+    volumes:
+      - ./data:/var/lib/sftpgo
