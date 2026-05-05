@@ -21,5 +21,6 @@ services:
       - GATEWAY_PORTS=yes
     volumes:
       - ./config:/config
+      - ./tunnel.conf:/config/sshd/sshd_config.d/tunnel.conf
       - ./tunnel.pub:/config/tunnel.pub:ro
     restart: always
